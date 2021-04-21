@@ -8,6 +8,10 @@ const MenuSchema = new Schema({
     qty: {type: Number, required: true},
     images: {type: String},
     category: {type: String, required: true}
+},
+{
+    timestamps: true,
+    versionKey: false,
 })
 
 const MenuItem = model('Menu', MenuSchema)
